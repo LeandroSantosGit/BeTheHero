@@ -39,10 +39,10 @@ routes.post('/incidents', celebrate({
 
 routes.delete('/incidents/:id', celebrate({
     [Segments.PARAMS]: Joi.object().keys({
-        id: Joi.number().required()
+        id: Joi.string().required()
     }),
     [Segments.HEADERS]: Joi.object({
-        authorization: Joi.string().required()
+        authorization: Joi.string().required().length(8)
     }).unknown(),
 }), IncidentsController.delete);
 
