@@ -16,7 +16,6 @@ module.exports = {
 
     async index(req, res) {
         const { page = 1 } = req.query;
-
         const [count] = await connection('incidents').count();
 
         const incidents = await connection('incidents')
@@ -31,9 +30,7 @@ module.exports = {
             'ongs.city',
             'ongs.uf'
         ]);
-
         res.header('X-Total-Count', count['count(*)']);
-
         return res.json(incidents);
     },
 
@@ -49,9 +46,7 @@ module.exports = {
         if (incident.ong_id !== ong_id) {
             return res.status(401).json({ error: 'Operation not permited.' });
         }
-
         await connection('incidents').where('id', id).delete();
-
         return res.status(201).send();
     }
 };
