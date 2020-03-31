@@ -28,7 +28,7 @@
   <a href="#gear-instalação"> :gear: Instalação</a>&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">🤔 Como Contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tv-vídeos"> :tv: Vídeos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#memo-licença"> :memo: Licença</a>
 </p>
 
 <p align="center">
